@@ -1,0 +1,52 @@
+# ====================================================================
+# .gitignore officiel pour projet C++ / Visual Studio & OpenCV
+# ====================================================================
+
+# Cache et configuration interne Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Répertoires de compilation (fichiers temporaires générés localement)
+x64/
+Debug/
+Release/
+bin/
+obj/
+*/x64/
+*/Debug/
+*/Release/
+
+# Fichiers intermédiaires de compilation Visual C++
+*.obj
+*.ilk
+*.pdb
+*.tlog
+*.idb
+*.log
+*.recipe
+*.lastbuildstate
+*.FileListAbsolute.txt
+*.dt.d.json
+*.dt.module.json
+*.command
+
+# Fichiers exécutables locaux
+*.exe
+
+# Bibliothèques dynamiques volumineuses (> 100 Mo bloquées par GitHub)
+*.dll
+
+# Ne jamais ignorer le code source, le dataset et les résultats
+!*.cpp
+!*.h
+!*.sln
+!*.slnx
+!*.vcxproj
+!*.vcxproj.filters
+!dataset/
+!dataset/**
+!*.csv
+!*.md
